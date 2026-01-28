@@ -1,9 +1,3 @@
-"""
-Zepto Frida Hooking Script
-Advanced method to intercept API calls directly from the Zepto Android app
-Requires: Frida installed on PC and rooted Android device with frida-server
-"""
-
 import frida
 import sys
 import json
@@ -82,9 +76,7 @@ Java.perform(function() {
 
 
 class FridaScraper:
-    """
-    Scraper using Frida to hook into the Zepto mobile app
-    """
+
     
     def __init__(self, package_name: str = "com.grofers.customerapp"):
 
